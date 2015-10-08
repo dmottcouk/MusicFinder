@@ -1,0 +1,215 @@
+http://www.bbc.co.uk/radio3/programmes/schedules/2014/02/06.xml
+
+
+dr who
+
+http://www.bbc.co.uk/programmes/b018jsf5
+
+http://www.bbc.co.uk/programmes/b006mh9v/episodes/upcoming.xml
+http://www.bbc.co.uk/programmes/b006mh9v/episodes/upcoming.json
+
+
+
+http://www.bbc.co.uk/programmes/genres/music/classical/player/episodes
+
+http://www.bbc.co.uk/tv/programmes/genres/drama/schedules/2014/02/04.xml
+
+http://www.bbc.co.uk/programmes/genres/music/classical/schedules/2014/02/04.xml
+
+
+
+http://www.bbc.co.uk/programmes/genres/music/classical/schedules/2014/02/04.xml gives
+
+
+<broadcast is_repeat="0" is_blanked="0">
+<schedule_date>2014-02-04</schedule_date>
+<start>2014-02-04T00:30:00Z</start>
+<end>2014-02-04T06:30:00Z</end>
+<duration>21600</duration>
+<service type="radio" id="bbc_radio_three" key="radio3">...</service>
+<programme type="episode">
+<pid>b03t0bll</pid>
+<position/>
+<title>04/02/2014</title>
+<short_synopsis>
+Jonathan Swain's selection includes the Suisse Romande Orchestra in Dvorak and Mozart.
+</short_synopsis>
+<media_type>audio</media_type>
+<duration>21600</duration>
+<image>
+<pid>p01nk6xk</pid>
+</image>
+<display_titles>
+<title>Through the Night</title>
+<subtitle>04/02/2014</subtitle>
+</display_titles>
+<first_broadcast_date>2014-02-04T00:30:00Z</first_broadcast_date>
+<ownership>
+<service type="radio" id="bbc_radio_three" key="radio3">
+<title>BBC Radio 3</title>
+</service>
+</ownership>
+<programme type="brand">
+<pid>b006tmq9</pid>
+<title>Through the Night</title>
+<position/>
+<expected_child_count/>
+<first_broadcast_date>2007-07-13T01:00:00+01:00</first_broadcast_date>
+<ownership>
+<service type="radio" id="bbc_radio_three" key="radio3">
+<title>BBC Radio 3</title>
+</service>
+</ownership>
+</programme>
+<available_until>2014-02-11T06:32:00Z</available_until>
+<actual_start>2014-02-04T07:01:19Z</actual_start>
+<is_available_mediaset_pc_sd>1</is_available_mediaset_pc_sd>
+<is_legacy_media>0</is_legacy_media>
+<media format="audio">
+<expires>2014-02-11T06:32:00Z</expires>
+<availability>18 hours left to listen</availability>
+</media>
+</programme>
+</broadcast>
+<broadcast is_repeat="1" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+<broadcast is_repeat="0" is_blanked="0">...</broadcast>
+</broadcasts>
+
+
+
+
+http://www.bbc.co.uk/tv/programmes/genres/childrens/activities
+http://www.bbc.co.uk/tv/programmes/genres/childrens/activities/schedules/2014/02/04.xml
+http://www.bbc.co.uk/programmes/genres/childrens/music
+
+http://www.bbc.co.uk/programmes/genres/childrens/drama
+http://www.bbc.co.uk/programmes/genres/childrens/news
+http://www.bbc.co.uk/programmes/genres/childrens/entertainmentandcomedy/schedules/2014/02/04.xml
+http://www.bbc.co.uk/programmes/genres/childrens/sport/schedules/2014/02/04.xml
+http://www.bbc.co.uk/programmes/genres/childrens/factual
+http://www.bbc.co.uk/programmes/genres/childrens/factual/schedules/2014/02/04.xml
+
+
+http://www.bbc.co.uk/programmes/genres/comedy/character
+http://www.bbc.co.uk/programmes/genres/comedy/sketch
+http://www.bbc.co.uk/programmes/genres/comedy/impressionists
+http://www.bbc.co.uk/programmes/genres/comedy/spoof
+http://www.bbc.co.uk/programmes/genres/comedy/music
+http://www.bbc.co.uk/programmes/genres/comedy/standup
+http://www.bbc.co.uk/programmes/genres/comedy/satire
+http://www.bbc.co.uk/programmes/genres/comedy/stunt
+http://www.bbc.co.uk/programmes/genres/comedy/sitcoms
+
+
+http://www.bbc.co.uk/programmes/genres/music/classicpopandrock
+http://www.bbc.co.uk/programmes/genres/music/hiphoprnbanddancehall
+http://www.bbc.co.uk/programmes/genres/music/classical
+http://www.bbc.co.uk/programmes/genres/music/jazzandblues
+http://www.bbc.co.uk/programmes/genres/music/country
+http://www.bbc.co.uk/tv/programmes/genres/music/popandchart
+http://www.bbc.co.uk/tv/programmes/genres/music/danceandelectronica
+http://www.bbc.co.uk/tv/programmes/genres/music/rockandindie
+http://www.bbc.co.uk/programmes/genres/music/desi
+http://www.bbc.co.uk/programmes/genres/music/soulandreggae
+http://www.bbc.co.uk/programmes/genres/music/easylisteningsoundtracksandmusicals
+http://www.bbc.co.uk/programmes/genres/music/world
+http://www.bbc.co.uk/programmes/genres/music/folk
+
+
+
+Manually creating a spinner
+
+public class Sample extends Activity
+  ...
+  public void onCreate(Bundle icicle) {
+    super.onCreate(icicle);
+    ...
+    
+    //Creating a spinner
+
+    Spinner spinner = new Spinner(this);
+    ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(this,
+        android.R.layout.simple_spinner_dropdown_item,
+            new String[] { "Apple", "Peach", "Banana" });
+    spinner.setAdapter(spinnerArrayAdapter);
+
+    
+    //Add spinner to this activity's view (a LinearLayout)
+
+    mainLayout.addView(spinner, new LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams.WRAP_CONTENT,
+        LinearLayout.LayoutParams.WRAP_CONTENT));
+    ...
+  }
+}
+...
+public class Sample extends Activity
+  ...
+  public void onCreate(Bundle icicle) {
+    super.onCreate(icicle);
+    ...
+    
+    //Creating a ListView with Context Menu
+
+    ListView listView = new ListView(this);
+    ArrayAdapter listViewArrayAdapter =
+        new ArrayAdapter(this,
+           android.R.layout.simple_list_item_1, new String[] {
+            "Apple", "Peach","Banane" });
+    listView.setAdapter(listViewArrayAdapter);
+    listView.setFocusableInTouchMode(true);
+    listView.setOnFocusChangeListener(
+        new View.OnFocusChangeListener() {
+      @Override
+      public void onFocusChange(View arg0, boolean arg1) {
+        Log.i("SampleApp", "onFocusChanged() - view=" + arg0);
+      }
+    });
+    listView.setOnItemClickListener(
+        new AdapterView.OnItemClickListener() {
+      @Override
+      public void onItemClick(AdapterView adapterView, View view,
+          int arg2, long arg3) {
+        int selectedPosition = adapterView.getSelectedItemPosition();
+        Log.i("SampleApp", "Click on position"+selectedPosition);
+      }
+    });
+    listView
+        .setOnCreateContextMenuListener(
+            new View.OnCreateContextMenuListener() {
+
+          public void onCreateContextMenu(ContextMenu menu, View view,
+              ContextMenu.ContextMenuInfo menuInfo) {
+            AdapterContextMenuInfo mi =
+                (AdapterContextMenuInfo) menuInfo;
+            menu.add(0, 0, 0, "Context-Menu-Entry");
+          }
+
+    });
+    ...
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
